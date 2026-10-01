@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090a0a">
+<meta name="description" content="محل القوش للمواد الصحية والإنشائية والعدد اليدوية — مدخل القوش، مجاور أسواق سام.">
+<title>محل القوش</title>
+<style>
+:root{--g:#f5a400;--w:#fff;--glass:rgba(7,9,9,.68);--line:rgba(255,255,255,.16)}
+*{box-sizing:border-box}html,body{margin:0;background:#050606;color:#fff;font-family:Tahoma,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.app{position:relative;min-height:100svh;overflow:hidden;background:#080909}
+.backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;background:#080909}
+.slide{position:absolute;inset:-5%;background:center/cover no-repeat;opacity:0;transform:scale(1.06);transition:opacity 1.2s,transform 6s}
+.slide.active{opacity:1;transform:scale(1.13)}
+.backdrop:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.60),rgba(0,0,0,.24) 32%,rgba(0,0,0,.50) 63%,rgba(0,0,0,.93))}
+.content{position:relative;z-index:2;width:min(100%,520px);min-height:100svh;margin:auto;padding:16px 14px 104px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand,.badge,.card,.service{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:17px}
+.mark{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#ffc247,#e58c00);color:#15110a;font-weight:1000;font-size:21px}
+.brand b{display:block;font-size:14px}.brand small{display:block;color:#ddd;font-size:9px;margin-top:2px}
+.badge{padding:9px 11px;border-radius:999px;font-size:10px;white-space:nowrap}
+.hero{padding:28px 4px 12px}.eyebrow{color:#ffc247;font-weight:900;font-size:11px;margin-bottom:7px}
+h1{font-size:clamp(31px,9.5vw,48px);line-height:1.03;margin:0;letter-spacing:-1px}
+.hero p{font-size:13px;line-height:1.7;color:#eee;margin:10px 0 0}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.service{min-height:60px;border-radius:16px;padding:10px;display:flex;align-items:center;gap:8px}
+.ico{width:32px;height:32px;flex:none;border-radius:10px;display:grid;place-items:center;background:rgba(245,164,0,.16);border:1px solid rgba(245,164,0,.3)}
+.service b{font-size:11px;line-height:1.35}
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.btn{min-height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:900;font-size:12px;background:rgba(10,12,12,.76);border:1px solid var(--line);backdrop-filter:blur(12px)}.primary{background:linear-gradient(135deg,#ffb21b,#e58c00);color:#15110a;border-color:transparent}
+.card{margin-top:10px;border-radius:19px;padding:12px}.title{color:#ffc247;font-weight:900;font-size:11px;margin-bottom:8px}
+.person{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px;border-radius:13px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.10);margin-top:7px}.person strong{font-size:12px}.person small{color:#bbb;font-size:9px}.num{direction:ltr;font-size:12px;font-weight:900}
+.addr{font-size:12px;line-height:1.6;margin-top:10px}.map{display:block;color:#ffc247;font-size:10px;margin-top:5px}
+.dock{position:fixed;z-index:10;left:50%;bottom:calc(8px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(calc(100% - 20px),500px);padding:7px;display:grid;grid-template-columns:repeat(3,1fr);gap:7px;border:1px solid rgba(255,255,255,.18);background:rgba(8,10,10,.82);backdrop-filter:blur(20px);border-radius:21px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.contact{min-height:56px;border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:9px;font-weight:900}.circle{width:29px;height:29px;border-radius:50%;display:grid;place-items:center;background:#252725}.wa .circle{background:#18b95f}.call .circle{background:#e9a01a;color:#111}.loc .circle{background:#8a4d28}
+.dots{position:fixed;z-index:5;left:9px;top:50%;display:flex;flex-direction:column;gap:5px}.dot{width:6px;height:6px;border-radius:50%;background:#ffffff55}.dot.active{height:21px;background:var(--g);border-radius:8px}
+@media(min-width:700px){.app{width:430px;box-shadow:0 0 70px #000}.dock{width:410px}}
+</style>
+</head>
+<body>
+<main class="app">
+<div class="backdrop" aria-hidden="true">
+<div class="slide active" style="background-image:url('assets/store-exterior.png')"></div>
+<div class="slide" style="background-image:url('assets/store-interior-1.png')"></div>
+<div class="slide" style="background-image:url('assets/store-interior-2.png')"></div>
+</div>
+<div class="content">
+<div class="top">
+<div class="brand"><div class="mark">ق</div><div><b>محل القوش</b><small>مواد صحية • إنشائية • عدد يدوية</small></div></div>
+<div class="badge">📍 مدخل القوش</div>
+</div>
+<section class="hero">
+<div class="eyebrow">محل القوش للمواد الصحية والإنشائية والعدد اليدوية</div>
+<h1>كل ما تحتاجه<br>لمشروعك بمكان واحد.</h1>
+<p>مواد صحية وإنشائية، عدد يدوية، أنابيب وملحقات، دهانات وكهربائيات.</p>
+</section>
+<section class="services">
+<div class="service"><div class="ico">🚰</div><b>مواد صحية</b></div>
+<div class="service"><div class="ico">🧱</div><b>مواد إنشائية</b></div>
+<div class="service"><div class="ico">🛠️</div><b>عدد يدوية</b></div>
+<div class="service"><div class="ico">🔧</div><b>أنابيب وملحقات</b></div>
+<div class="service"><div class="ico">🪣</div><b>دهانات</b></div>
+<div class="service"><div class="ico">💡</div><b>كهربائيات</b></div>
+</section>
+<div class="cta">
+<a class="btn primary" href="https://wa.me/9647508244909" target="_blank">💬 واتساب</a>
+<a class="btn" href="https://maps.app.goo.gl/Pjn7zQbbqMERFzYk7" target="_blank">📍 موقع المحل</a>
+</div>
+<section class="card">
+<div class="title">📞 تواصل مباشر</div>
+<a class="person" href="tel:+9647508244909"><div><strong>هدير توماس (أبو ريان)</strong><br><small>اتصال / واتساب</small></div><div class="num">0750 824 4909</div></a>
+<a class="person" href="tel:+9647517731049"><div><strong>ريان توماس</strong><br><small>اتصال / واتساب</small></div><div class="num">0751 773 1049</div></a>
+<a class="person" href="tel:+9647502343016"><div><strong>ريفان توماس</strong><br><small>اتصال / واتساب</small></div><div class="num">0750 234 3016</div></a>
+<div class="addr">العنوان: مدخل القوش — مجاور أسواق سام</div>
+<a class="map" href="https://maps.app.goo.gl/Pjn7zQbbqMERFzYk7" target="_blank">فتح الموقع على Google Maps ↗</a>
+</section>
+</div>
+<div class="dots"><i class="dot active"></i><i class="dot"></i><i class="dot"></i></div>
+<nav class="dock">
+<a class="contact call" href="tel:+9647508244909"><div class="circle">☎</div><span>اتصال</span></a>
+<a class="contact wa" href="https://wa.me/9647508244909" target="_blank"><div class="circle">◉</div><span>واتساب</span></a>
+<a class="contact loc" href="https://maps.app.goo.gl/Pjn7zQbbqMERFzYk7" target="_blank"><div class="circle">⌖</div><span>الموقع</span></a>
+</nav>
+<script>
+const s=[...document.querySelectorAll('.slide')],d=[...document.querySelectorAll('.dot')];let i=0;
+setInterval(()=>{s[i].classList.remove('active');d[i].classList.remove('active');i=(i+1)%s.length;s[i].classList.add('active');d[i].classList.add('active')},5200);
+</script>
+</main>
+</body>
+</html>
